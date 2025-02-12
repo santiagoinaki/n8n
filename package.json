@@ -9,7 +9,7 @@
   "packageManager": "pnpm@10.2.1",
   "scripts": {
     "prepare": "node scripts/prepare.mjs",
-    "preinstall": "node scripts/block-npm-install.js",
+    "preinstall": "npm install -g pnpm@10.2.1 && node scripts/block-npm-install.js",
     "build": "turbo run build",
     "build:backend": "turbo run build:backend",
     "build:frontend": "turbo run build:frontend",
